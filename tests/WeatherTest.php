@@ -20,7 +20,8 @@ class WeatherTest extends TestCase
         return new Client(['handler' => new MockHandler($responses)]);
     }
 
-    public function testRequestWeather() {
+    public function testRequestWeather()
+    {
         $city = 'london';
         $httpClient = $this->buildHttpClient([
             file_get_contents(__DIR__ . '/json/metaweather-search.json'),

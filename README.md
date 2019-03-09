@@ -17,5 +17,8 @@ git clone https://github.com/kritik94/hexlet-test-workshop-cli.git
 ### Usage
 
 ```
-./bin/weather moscow
+> ./bin/weather moscow
+City: moscow
+temperature: 3.05
+airPressure: 1004.66
 ```

@@ -24,8 +24,8 @@ class WeatherTest extends TestCase
     {
         $city = 'london';
         $httpClient = $this->buildHttpClient([
-            file_get_contents(__DIR__ . '/json/metaweather-search.json'),
-            file_get_contents(__DIR__ . '/json/metaweather-weather.json'),
+            file_get_contents(__DIR__ . '/fixtures/metaweather-search.json'),
+            file_get_contents(__DIR__ . '/fixtures/metaweather-weather.json'),
         ]);
 
         $weatherApp = new Weather(['httpClient' => $httpClient]);
